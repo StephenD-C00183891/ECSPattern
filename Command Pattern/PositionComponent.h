@@ -14,11 +14,11 @@ public:
 class PositionComponent : public Component
 {
 public:
-	PositionComponent() : pos(100, 100) {}
+	PositionComponent() : pos(150200) {}
 
-	Point2D getPosition() { return pos; }
-	void setPosition(Point2D pos) { this->getPosition = pos; }
+	int getPosition() { return pos; }
+	void setPosition() { this->setValue(pos); }
 
 private:
-	Point2D pos;
+	int pos;
 };
